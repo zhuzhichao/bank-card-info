@@ -1,0 +1,20 @@
+{
+    "name": "zhuzhichao/bank-card-info",
+    "description": "Get the bank card info",
+	"keywords": ["bank", "card info", "chinese"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhuzhichao",
+            "email": "me@zhuzhichao.com"
+        }
+    ],
+	"autoload": {
+		"files": ["src/BankCard.php"],
+		"psr-4": {
+			"Zhuzhichao\\BankCardInfo\\": "src/"
+		}
+	},
+    "minimum-stability": "stable",
+    "require": {}
+}
