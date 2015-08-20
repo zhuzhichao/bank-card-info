@@ -3,6 +3,19 @@
 
 根据银行卡号获取银行信息（银行名称, 信用卡/借记卡, 银行LOGO 等）, 供任何 PHP 框架或者原生代码使用.
 
+```
+BankCard::info('6225700000000000');
+
+// 将得到
+array (size=6)
+  'validated'    => true			// 是否验证成功
+  'bank'         => 'CEB',			// 银行标识
+  'bankName'     => '中国光大银行' ,	// 银行名称
+  'bankImg'      => 'https://apimg.alipay.com/combo.png?d=cashier&t=CEB',  // 银行LOGO
+  'cardType'     => 'CC',		// 卡类型
+  'cardTypeName' => '信用卡',	// 卡类型名称
+```
+
 ##特点
 
 1. 不配置和使用数据库，妈妈再也不用担心配置问题了
