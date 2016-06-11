@@ -10,7 +10,6 @@
         }
     ],
 	"autoload": {
-		"files": ["src/BankCard.php"],
 		"psr-4": {
 			"Zhuzhichao\\BankCardInfo\\": "src/"
 		}
