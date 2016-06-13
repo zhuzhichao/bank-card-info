@@ -32,8 +32,9 @@ array (size=6)
 如果已经有了`composer.json`文件的话，直接添加`"zhuzhichao/bank-card-info": "~1.0"` 到依赖，然后执行`composer update`。
 或者直接`composer require "zhuzhichao/bank-card-info"`。
 
-##Use
+##Usage
 
+#### Common
 可以这样来用
 ```php
 <?php 
@@ -53,7 +54,7 @@ array (size=6)
   'cardTypeName' => '信用卡',
 ```
 
-对于`laravel`可以这样优雅的用:
+#### For `laravel`:
 
 1.安装该插件
 
