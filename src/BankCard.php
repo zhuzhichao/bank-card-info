@@ -36,7 +36,7 @@ class BankCard
         "HKB"       => "汉口银行",
         "SPDB"      => "上海浦东发展银行",
         "NXRCU"     => "宁夏黄河农村商业银行",
-        "NYNB"      => "广东南粤银行",
+        "NYBANK"    => "广东南粤银行",
         "GRCB"      => "广州农商银行",
         "BOSZ"      => "苏州银行",
         "HZCB"      => "杭州银行",
@@ -204,15 +204,15 @@ class BankCard
             );
         } else {
             $bankInfo = array(
-                'validated' => $result->validated,              // 是否验证通过
-                'bank' => $result->bank,                        // 银行代码
-                'bankName' => self::$bankInfo[$result->bank],   // 银行名称
-                'bankImg' => self::getBankImg($result->bank),
-                'cardType' => $result->cardType,                // 银行卡类型, CC 信用卡, DC 储蓄卡
+                'validated'    => $result->validated,              // 是否验证通过
+                'bank'         => $result->bank,                        // 银行代码
+                'bankName'     => isset(self::$bankInfo[$result->bank]) ? self::$bankInfo[$result->bank] : '',   // 银行名称
+                'bankImg'      => self::getBankImg($result->bank),
+                'cardType'     => $result->cardType,                // 银行卡类型, CC 信用卡, DC 储蓄卡
                 'cardTypeName' => self::$cardType[$result->cardType],
             );
         }
-        
+
         return $bankInfo;
     }
 }
