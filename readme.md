@@ -1,4 +1,4 @@
-#Bank card info
+# Bank card info
 [![Build Status](https://api.travis-ci.org/zhuzhichao/bank-card-info.svg?branch=master)](https://travis-ci.org/zhuzhichao/bank-card-info)
 
 根据银行卡号获取银行信息（银行名称, 信用卡/借记卡, 银行LOGO 等）, 供任何 PHP 框架或者原生代码使用.
@@ -19,20 +19,20 @@ array (size=6)
   'cardTypeName' => '信用卡',	// 卡类型名称
 ```
 
-##特点
+## 特点
 
 1. 不配置和使用数据库，妈妈再也不用担心配置问题了
 2. 使用简单，功能专（dān）注（yī）
 3. 使用[composer](https://getcomposer.org/)进行安装管理，国际标准，方便快捷，即安即用，随时更新数据库
 
-##Install
+## Install
 
 这里不详细介绍安装composer了，大家根据[链接](https://getcomposer.org/)自行安装吧！什么？没听过？你真的需要脑补了，赶快行动吧！^^
 
 如果已经有了`composer.json`文件的话，直接添加`"zhuzhichao/bank-card-info": "~1.0"` 到依赖，然后执行`composer update`。
 或者直接`composer require "zhuzhichao/bank-card-info"`。
 
-##Usage
+## Usage
 
 #### Common
 可以这样来用
@@ -445,13 +445,13 @@ https://apimg.alipay.com/combo.png?d=cashier&t=ABC
 
 河北省农村信用社
 
-##鸣谢
+## 鸣谢
 支付宝提供的这么好用的接口 ^_^
 
-##Contributing
+## Contributing
 有什么新的想法和建议，欢迎提交[issue](https://github.com/zhuzhichao/bank-card-info/issues)或者[Pull Requests](https://github.com/zhuzhichao/bank-card-info/pulls)。
 
 
-##License
+## License
 MIT
 
