@@ -2,8 +2,9 @@
 require __DIR__.'/../vendor/autoload.php';
 
 use Zhuzhichao\BankCardInfo\BankCard;
+use PHPUnit\Framework\TestCase;
 
-class TestBankCard extends PHPUnit_Framework_TestCase
+class TestBankCard extends TestCase
 {
 
     public function testBankCardInfo()
