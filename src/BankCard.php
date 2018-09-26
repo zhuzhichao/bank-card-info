@@ -175,7 +175,8 @@ class BankCard
         "TCCB"      => "天津银行",
         "WJRCB"     => "吴江农商银行",
         "CBBQS"     => "城市商业银行资金清算中心",
-        "HBRCU"     => "河北省农村信用社"
+        "HBRCU"     => "河北省农村信用社",
+        "XJRCU"     => "新疆农村信用社",
     ];
 
     public static function getBankList()
