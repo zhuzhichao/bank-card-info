@@ -59,8 +59,7 @@ array (size=6)
 
 1.安装该插件
 
-2.在 `config/app.php` 中添加
-
+2.在 `config/app.php`(Laravel 5.0 - 5.4) 添加下面的代码，如果是 Laravel 5.5+ ，已经支持扩展包发现，不需要添加下面的代码
 ```php
 'aliases' => [
     'BankCard'  => 'Zhuzhichao\BankCardInfo\BankCard', 
