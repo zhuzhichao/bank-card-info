@@ -1,9 +1,10 @@
 # Bank card info
+
 [![Build Status](https://api.travis-ci.org/zhuzhichao/bank-card-info.svg?branch=master)](https://travis-ci.org/zhuzhichao/bank-card-info)
 
 根据银行卡号获取银行信息（银行名称, 信用卡/借记卡, 银行LOGO 等）, 供任何 PHP 框架或者原生代码使用.
 
-做涉及到金融项目的时候，难免和银行卡打交道，还记得在支付宝上给同学同志同事女朋友打钱的时候，当你输入完银行卡号的时候自动帮你选择好银行卡的小细节吗？当你给信用卡还款的时候，能自动判断出是信用卡还是储蓄卡。如此贴心的功能，你值得拥有！
+做涉及到金融项目的时候，难免和银行卡打交道，还记得在支付宝上给`同学``同志``同事``女朋友`打钱的时候，当你输入完银行卡号的时候自动帮你选择好银行卡的小细节吗？当你给信用卡还款的时候，还能自动判断出是信用卡还是储蓄卡。如此贴心的功能，你值得拥有！
 
 
 ```
@@ -21,20 +22,20 @@ array (size=6)
 
 ## 特点
 
-1. 不配置和使用数据库，妈妈再也不用担心配置问题了
+1. 不需要配置，不需要使用数据库，妈妈再也不用担心配置问题了
 2. 使用简单，功能专（dān）注（yī）
-3. 使用[composer](https://getcomposer.org/)进行安装管理，国际标准，方便快捷，即安即用，随时更新数据库
+3. 使用 [composer](https://getcomposer.org/) 进行安装管理，国际标准，方便快捷，即安即用，随时更新数据库
 
 ## Install
 
-这里不详细介绍安装composer了，大家根据[链接](https://getcomposer.org/)自行安装吧！什么？没听过？你真的需要脑补了，赶快行动吧！^^
+这里不详细介绍安装composer了，大家根据 [链接](https://getcomposer.org/) 自行安装 `composer`
 
-如果已经有了`composer.json`文件的话，直接添加`"zhuzhichao/bank-card-info": "~1.0"` 到依赖，然后执行`composer update`。
-或者直接`composer require "zhuzhichao/bank-card-info"`。
+`composer require "zhuzhichao/bank-card-info"`
 
 ## Usage
 
 #### Common
+
 可以这样来用
 ```php
 <?php 
@@ -58,15 +59,16 @@ array (size=6)
 
 1.安装该插件
 
-2.在`app/config/app.php`(Laravel 4) 或 `config/app.php`(Laravel 5)，或者你自定义配置的app.php文件内添加
+2.在 `config/app.php`(Laravel 5+)，或者你自定义配置的 app.php 文件内添加
 
 ```php
-	'aliases' => array( 
+	'aliases' => [
         'BankCard'  => 'Zhuzhichao\BankCardInfo\BankCard', 
-	),
+	],
 ```
 
 3.然后开始在你的项目里面使用了 `BankCard::info('6225700000000000')` 获取银行卡信息.
+
 ```
 // 返回结果
 array (size=6)
@@ -79,6 +81,7 @@ array (size=6)
 ```
 
 4.获取银行列表信息 `BankCard::getBankList()` , 如下
+
 ```
 array (size=165)
   'SRCB'   =>  '深圳农村商业银行',
@@ -95,6 +98,7 @@ array (size=165)
 ```
 
 5.获取银行名称 `BankCard::getBankNameList()` , 如下
+
 ```
 array (size=165)
   0 => '深圳农村商业银行',
@@ -109,6 +113,7 @@ array (size=165)
 ```
 
 6.单独获取银行LOGO `BankCard::getBankImg('ABC')`
+
 ```
 https://apimg.alipay.com/combo.png?d=cashier&t=ABC
 ```
@@ -446,12 +451,15 @@ https://apimg.alipay.com/combo.png?d=cashier&t=ABC
 河北省农村信用社
 
 ## 鸣谢
+
 支付宝提供的这么好用的接口 ^_^
 
 ## Contributing
-有什么新的想法和建议，欢迎提交[issue](https://github.com/zhuzhichao/bank-card-info/issues)或者[Pull Requests](https://github.com/zhuzhichao/bank-card-info/pulls)。
+
+有什么新的想法和建议，欢迎提交 [issue](https://github.com/zhuzhichao/bank-card-info/issues) 或者 [Pull Requests](https://github.com/zhuzhichao/bank-card-info/pulls)。
 
 
 ## License
+
 MIT
 
