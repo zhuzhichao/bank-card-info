@@ -4,7 +4,7 @@
 
 根据银行卡号获取银行信息（银行名称, 信用卡/借记卡, 银行LOGO 等）, 供任何 PHP 框架或者原生代码使用.
 
-做涉及到金融项目的时候，难免和银行卡打交道，还记得在支付宝上给`同学``同志``同事``女朋友`打钱的时候，当你输入完银行卡号的时候自动帮你选择好银行卡的小细节吗？当你给信用卡还款的时候，还能自动判断出是信用卡还是储蓄卡。如此贴心的功能，你值得拥有！
+做涉及到金融项目的时候，难免和银行卡打交道，还记得在支付宝上给 `同学` `同志` `同事` `女朋友` 打钱的时候，当你输入完银行卡号的时候自动帮你选择好银行卡的小细节吗？当你给信用卡还款的时候，还能自动判断出是信用卡还是储蓄卡。如此贴心的功能，你值得拥有！
 
 
 ```
@@ -16,8 +16,8 @@ array (size=6)
   'bank'         => 'CEB',			// 银行标识
   'bankName'     => '中国光大银行' ,	// 银行名称
   'bankImg'      => 'https://apimg.alipay.com/combo.png?d=cashier&t=CEB',  // 银行LOGO
-  'cardType'     => 'CC',		// 卡类型
-  'cardTypeName' => '信用卡',	// 卡类型名称
+  'cardType'     => 'CC',		// 卡类型：CC 信用卡 DC 储蓄卡
+  'cardTypeName' => '信用卡',	// 卡类型名称：信用卡 | 储蓄卡
 ```
 
 ## 特点
@@ -59,12 +59,12 @@ array (size=6)
 
 1.安装该插件
 
-2.在 `config/app.php`(Laravel 5+)，或者你自定义配置的 app.php 文件内添加
+2.在 `config/app.php` 中添加
 
 ```php
-	'aliases' => [
-        'BankCard'  => 'Zhuzhichao\BankCardInfo\BankCard', 
-	],
+'aliases' => [
+    'BankCard'  => 'Zhuzhichao\BankCardInfo\BankCard', 
+],
 ```
 
 3.然后开始在你的项目里面使用了 `BankCard::info('6225700000000000')` 获取银行卡信息.
