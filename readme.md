@@ -1,6 +1,12 @@
-# Bank card info
+# 银行卡信息查询 Bank card info
 
-[![Build Status](https://api.travis-ci.org/zhuzhichao/bank-card-info.svg?branch=master)](https://travis-ci.org/zhuzhichao/bank-card-info)
+<p>
+<a href="https://scrutinizer-ci.com/g/zhuzhichao/bank-card-info/?branch=master"><img src="https://scrutinizer-ci.com/g/zhuzhichao/bank-card-info/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
+<a href="https://travis-ci.org/zhuzhichao/bank-card-info"><img src="https://travis-ci.org/zhuzhichao/bank-card-info.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/zhuzhichao/bank-card-info"><img src="https://poser.pugx.org/zhuzhichao/bank-card-info/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/zhuzhichao/bank-card-info"><img src="https://poser.pugx.org/zhuzhichao/bank-card-info/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/zhuzhichao/bank-card-info"><img src="https://poser.pugx.org/zhuzhichao/bank-card-info/license.svg" alt="License"></a>
+</p>
 
 根据银行卡号获取银行信息（银行名称, 信用卡/借记卡, 银行LOGO 等）, 供任何 PHP 框架或者原生代码使用.
 
