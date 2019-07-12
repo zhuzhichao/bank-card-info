@@ -28,6 +28,15 @@ class TestBankCard extends TestCase
         ], BankCard::info('6217921400000000'));
 
         $this->assertEquals([
+            'validated'    => true,
+            'bank'         => 'XMBANK',
+            'bankName'     => '厦门银行',
+            'bankImg'      => 'https://apimg.alipay.com/combo.png?d=cashier&t=XMBANK',
+            'cardType'     => 'DC',
+            'cardTypeName' => '储蓄卡',
+        ], BankCard::info('6230195920060310000'));
+
+        $this->assertEquals([
             'validated'    => false
         ], BankCard::info('4402905009100000'));
 

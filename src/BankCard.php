@@ -161,6 +161,7 @@ class BankCard
         "XCYH"      => "许昌银行",
         "XJRCU"     => "新疆农村信用社",
         "XLBANK"    => "中山小榄村镇银行",
+        "XMBANK"    => "厦门银行",
         "XTB"       => "邢台银行",
         "XXBANK"    => "新乡银行",
         "XYBANK"    => "信阳银行",
